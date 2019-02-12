@@ -55,16 +55,16 @@ class CustomCurvesPaint extends CustomPainter {
     final paint = Paint()..isAntiAlias = true;
 
     // Draw a black background rectangle
-    Rect backgroundRect = Rect.fromLTWH(0, 0, size.width, size.height);
+    final backgroundRect = Rect.fromLTWH(0, 0, size.width, size.height);
     paint.color = Colors.black45;
     canvas.drawRect(backgroundRect, paint);
 
-    // Trianle
+    // Bézier curve
     Path path = Path();
     path.lineTo(0, size.height);
     path.lineTo(size.width, size.height);
 
-    var controlPoints = Offset(size.width * _dx, size.height * _dy);
+    final controlPoints = Offset(size.width * _dx, size.height * _dy);
     path.quadraticBezierTo(controlPoints.dx, controlPoints.dy, 0, 0);
 
     paint.color = Colors.deepOrange;
