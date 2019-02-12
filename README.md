@@ -8,3 +8,13 @@ You can read more on Custom Shapes using Custom Painter [here](https://zocada.co
 
 ![Demo](/screenshots/demo.gif)
 
+## Contributing 👨‍💻👩‍💻
+Just fork this repo and download and `cd` into it and then run:
+```sh
+flutter run
+``` 
+or to run in release mode:
+```sh
+flutter run --release
+```
+#### Feel free to submit any suggestions or issues! ✨
