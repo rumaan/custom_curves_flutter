@@ -38,7 +38,7 @@ class Shapes extends CustomPainter {
 
     canvas.drawCircle(
       Offset(size.width * 0.5, size.height * 0.5),
-      10.0,
+      30.0,
       paint,
     );
   }

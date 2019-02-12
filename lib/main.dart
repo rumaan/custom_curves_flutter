@@ -21,14 +21,7 @@ class _AppPage extends State<AppPage> with SingleTickerProviderStateMixin {
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            title: Text('Custom Painter'),
-            bottom: TabBar(
-              indicatorColor: Colors.deepOrange,
-              tabs: <Widget>[
-                Tab(child: Text('Curves')),
-                Tab(child: Text('Shapes')),
-              ],
-            ),
+            title: Text('Curves'),
           ),
           body: TabBarView(
             children: <Widget>[
